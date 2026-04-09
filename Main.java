@@ -1,11 +1,12 @@
 class Main {
     public static void main(String[] args) {
-        String message = getMessage();
-        System.out.print("Это добавлено в ветке main");
-        System.out.println(" - " + message);
-    }
+        System.out.println("Это добавлено в ветке main");
 
-    static String getMessage() {
-        return "Привет от Git!";
+        int[] numbers = {1, 2, 3, 4, 5};
+
+        System.out.println("Числа в массиве:");
+        for (int i = 0; i < numbers.length; i++) {
+            System.out.println("  numbers[" + i + "] = " + numbers[i]);
+        }
     }
 }
