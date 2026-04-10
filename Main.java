@@ -9,5 +9,22 @@ class Main {
         for (int i = 0; i < numbers.length; i++) {
             System.out.println("  numbers[" + i + "] = " + numbers[i]);
         }
+
+        System.out.print("Это добавлено в ветке dev");
+
+        String[] names = {"Анна", "Борис", "Виктор", "Галина"};
+
+        System.out.println("Приветствия:");
+        for (String name : names) {
+            greet(name);
+        }
+
+        int count = names.length;
+        System.out.println("Всего приветствий: " + count);
+    }
+
+    static void greet(String name) {
+        System.out.println("Привет, " + name + "!");
+
     }
 }
