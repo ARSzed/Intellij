@@ -4,9 +4,13 @@ class Main {
 
         String[] names = {"Анна", "Борис", "Виктор", "Галина"};
 
-        System.out.println("\nСписок пользователей:");
+        System.out.println("Приветствия:");
         for (String name : names) {
-            System.out.println("* " + name);
+            greet(name);
         }
+    }
+
+    static void greet(String name) {
+        System.out.println("Привет, " + name + "!");
     }
 }
