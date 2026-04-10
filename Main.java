@@ -8,6 +8,9 @@ class Main {
         for (String name : names) {
             greet(name);
         }
+
+        int count = names.length;
+        System.out.println("Всего приветствий: " + count);
     }
 
     static void greet(String name) {
